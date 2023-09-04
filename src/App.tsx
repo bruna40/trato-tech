@@ -1,9 +1,16 @@
+import { ThemeProvider } from "styled-components"
+import Navbar from "./components/Navbar"
+import { GlobalStyle } from "./styles/global"
+import { defaultTheme } from "./styles/theme/default"
+
 function App() {
 
   return (
-    <>
-     <h1>Hello World</h1>
-    </>
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
+      <Navbar />
+      <h1>Hello World</h1>
+    </ThemeProvider>
   )
 }
 
