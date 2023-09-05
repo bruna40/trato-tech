@@ -1,15 +1,14 @@
 import { ThemeProvider } from "styled-components"
-import Navbar from "./components/Navbar"
 import { GlobalStyle } from "./styles/global"
 import { defaultTheme } from "./styles/theme/default"
+import Router from "./Router"
 
 function App() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
+      <Router />
       <GlobalStyle />
-      <Navbar />
-      <h1>Hello World</h1>
     </ThemeProvider>
   )
 }
