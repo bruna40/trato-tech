@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const NavbarContainer = styled.nav`
+export const NavbarContainer = styled.header`
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
